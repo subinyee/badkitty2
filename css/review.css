@@ -17,13 +17,13 @@ body {
     background: rgba(0, 0, 0, 0.1);
   }
 
-.login {
+.Image Upload {
     width: 30%;
-    height: 600px;
-    background: white;
+    height: 400px;
+    background: white; */
     border-radius: 20px;
-    /* display: flex; */
-    justify-content: center;
+    display: flex;
+    justify-content: center; */
     align-items: center;
     flex-direction: column;
   }
@@ -31,8 +31,8 @@ body {
 .container {
     display: flex;
     height: 100%;
-    flex-direction: column;
-}
+    flex-direction: column; 
+  }
 
 .image-upload {
     flex: 1;
@@ -114,4 +114,4 @@ label {
 
 .click {
     font-size: 20px;
-}
+} 

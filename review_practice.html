@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>review_practice</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .img {
+            width: 300px;
+            height: 200px;
+            border-radius: 30px;
+            margin: 0.1em;
+        }
+
+        .img-box {
+            display: inline-block;
+        }
+
+        .wrapper {
+            justify-content: stretch;
+            margin: auto;
+            padding-top: 100px;
+        }
+
+        html {
+            height: 100%;
+        }
+
+body {
+    font-family: sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+.wrap {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+.login {
+    width: 30%;
+    height: 400px;
+    background: white; */
+    border-radius: 20px;
+    /* display: flex; */
+    justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+.container {
+    display: flex;
+    height: 300px;
+    flex-direction: column; 
+  }
+
+.image-upload {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+label {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#chooseFile {
+    visibility: hidden;
+}
+
+.fileContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.fileInput {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px black;
+    width: 80%;
+    height: 30px;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px black;
+    width: 80%;
+    height: 30px;
+}
+
+#fileName {
+    margin-left: 50px;
+}
+
+.buttonContainer {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 0.8em;
+
+    cursor: pointer;
+}
+
+.image-show {
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.img {
+    position: absolute;
+}
+
+.click {
+    font-size: 20px;
+} 
+    </style>
+</head>
+
+<body>
+
+    <!-- Nav-bar -->
+    <div class="nav-bar">
+        <div class="nav-bar-box">
+            <ul class="nav-bar__list">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">REVIEW</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="image-upload" id="image-upload">
+            <div class="wrap">
+                <div class="login">
+                    <form method="post" enctype="multipart/form-data">
+                        <div class="button">
+                            <label for="chooseFile">Image Upload</label>
+                        </div>
+                        <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
+                    </form>
+
+                    <div class="fileContainer">
+                        <div class="fileInput">
+                            <p>File Name: </p>
+                            <p id="fileName"></p>
+                        </div>
+                        <div class="buttonContainer">
+                            <div class="click" id="click">click</div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <p>comment: </p>
+                        <p id="fileName"></p>
+                    </div>
+                </div>
+        </div>
+    <!-- </div>
+        <div class="image-show" id="image-show"></div>
+    </div> -->
+
+
+<div class=wrapper>
+    <div class="img-box"><img class="img" src="https://cdn.pixabay.com/photo/2019/06/18/11/32/cat-4282123__340.jpg" /></div>
+    <div class="img-box"><img class="img" src="https://cdn.pixabay.com/photo/2019/06/18/11/32/cat-4282123__340.jpg" /></div>
+    <div class="img-box"><img class="img" src="https://cdn.pixabay.com/photo/2019/06/18/11/32/cat-4282123__340.jpg" /></div>
+    <div class="img-box"><img class="img" src="https://cdn.pixabay.com/photo/2019/06/18/11/32/cat-4282123__340.jpg" /></div>
+    <div class="img-box"><img class="img" src="https://cdn.pixabay.com/photo/2019/06/18/11/32/cat-4282123__340.jpg" /></div>
+    <div class="img-box"><img class="img" src="https://cdn.pixabay.com/photo/2019/06/18/11/32/cat-4282123__340.jpg" /></div>
+    <div class="img-box"><img class="img" src="https://cdn.pixabay.com/photo/2019/06/18/11/32/cat-4282123__340.jpg" /></div>
+    <div class="img-box"><img class="img" src="https://cdn.pixabay.com/photo/2019/06/18/11/32/cat-4282123__340.jpg" /></div>
+</div>
+</body>
+</html>
