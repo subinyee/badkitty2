@@ -1,40 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>review_practice</title>
-
+    <title>review_practice2</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <link rel="stylesheet" href="css/styles.css">
-    <style>
-        .img {
-            width: 300px;
-            height: 200px;
-            border-radius: 30px;
-            margin: 0.1em;
-        }
-
-        .img-box {
-            display: inline-block;
-        }
-
-        .wrapper {
-            justify-content: stretch;
-            margin: auto;
-            padding-top: 100px;
-            display: inline-block;
-        }
-
-        .image-upload {
-            position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-        }
-    </style>
 </head>
 
 <body>
-
     <!-- Nav-bar -->
-    <div class="nav-bar">
+    <nav class="nav-bar">
         <div class="nav-bar-box">
             <ul class="nav-bar__list">
                 <li><a href="#">HOME</a></li>
@@ -43,8 +18,9 @@
                 <li><a href="login.html">LOGIN</a></li>
             </ul>
         </div>
-    </div>
+    </nav>
 
+    <!-- 이미지 나열 -->
     <div class=wrapper>
         <div class="img-box"><img class="img" src="https://cdn.pixabay.com/photo/2019/06/18/11/32/cat-4282123__340.jpg" /></div>
         <div class="img-box"><img class="img" src="https://cdn.pixabay.com/photo/2019/06/18/11/32/cat-4282123__340.jpg" /></div>
@@ -56,27 +32,32 @@
         <div class="img-box"><img class="img" src="https://cdn.pixabay.com/photo/2019/06/18/11/32/cat-4282123__340.jpg" /></div>
     </div>
 
-    <div class="Image Upload">
-        <form method="post" enctype="multipart/form-data">
-            <div class="button">
-                <label for="chooseFile">Image Upload</label>
-            </div>
-            <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
-        </form>
+    <!-- image Upload -->
+    <!-- <div class="container">
+        <div class="image-upload" id="image-upload">
 
-        <div class="fileContainer">
-            <div class="fileInput">
-                <p>File Name: </p>
-                <p id="fileName"></p>
-            </div>
-            <div class="buttonContainer">
-                <div class="click" id="click">click</div>
+            <form method="post" enctype="multipart/form-data">
+                <div class="button">
+                    <label for="chooseFile">
+                        CLICK HERE! 
+                    </label>
+                </div>
+                <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
+            </form>
+
+            <div class="fileContainer">
+                <div class="fileInput">
+                    <p>FILE NAME: </p>
+                    <p id="fileName"></p>
+                </div>
+                <div class="buttonContainer">
+                    <div class="submitButton" id="submitButton">SUBMIT</div>
+                </div>
             </div>
         </div>
-        <div class="comment">
-            <!-- <p>comment: </p> -->
-            <p id="fileName"></p>
-        </div>
-    </div>
+
+        <div class="image-show" id="image-show"></div>
+    </div> -->
+
 </body>
 </html>

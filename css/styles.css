@@ -8,7 +8,8 @@
 @import "screens/door.css";
 @import "screens/regions.css";
 @import "screens/login.css";
-@import "screens/review.css";
+@import "screens/join.css";
+@import "screens/review_practice.css";
 
 /* font */
 @font-face {
